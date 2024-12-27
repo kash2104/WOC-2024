@@ -1,9 +1,16 @@
-import './App.css'
+import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/ExampleComponent/Home';
 
 function App() {
   return (
-    <div className='parent-container'></div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;

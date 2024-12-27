@@ -1,16 +1,20 @@
+import { Route, Routes } from 'react-router';
 import './App.css';
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './components/OurEvents/Home';
+import Navbar from './components/Navbar';
+import HomePage from './pages/HomePage';
+import PastEvents from './pages/PastEvents';
 
 function App() {
   return (
-    <Router>
+    <div className='main'>
+      <Navbar/>
+
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path='/' element={<HomePage/>}/>
+        <Route path='/past-events' element={<PastEvents/>}/>
       </Routes>
-    </Router>
-  );
+    </div>
+  )
 }
 
-export default App;
+export default App

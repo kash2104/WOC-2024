@@ -4,14 +4,7 @@
     box-sizing: border-box;
 }
 
-.parent-container {
-   
+.main{
     background-color: rgba(12, 18, 36, 1);
-    position: relative; 
-    width: 1433px; 
-    height: 226px;
-}
-body{
-    background-color: #0C1224;
-    ;
+    height: 100vh;
 }
